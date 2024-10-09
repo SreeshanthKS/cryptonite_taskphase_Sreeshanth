@@ -624,6 +624,65 @@ Ref. https://en.wikipedia.org/wiki/Apropos_(Unix)#:~:text=In%20computing%2C%20ap
 .
 ## 6. HELPFUL PROGRAMS
 
+According the conditions/help statements given in the --help... we will be running out this program 
+
+FLAG ---- pwn.college{ILjPz_Z_1yiuC3AlGLc1MtN1vxb.ddjM4QDLxYjN0czW}
+
+CODE ---
+hacker@man~helpful-programs:~$ /challenge/challenge --help
+usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --fortune             read your fortune
+  -v, --version         get the version number
+  -g GIVE_THE_FLAG, --give-the-flag GIVE_THE_FLAG
+                        get the flag, if given the correct value
+  -p, --print-value     print the value that will cause the -g option to give you the flag
+hacker@man~helpful-programs:~$ /challenge/challenge -g
+usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+a challenge to make you ask for help: error: argument -g/--give-the-flag: expected one argument
+hacker@man~helpful-programs:~$ /challenge/challenge -g GIVE_THE_FLAG
+usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+a challenge to make you ask for help: error: argument -g/--give-the-flag: invalid int value: 'GIVE_THE_FLAG'
+hacker@man~helpful-programs:~$ /challenge/challenge --give-the-flag
+usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+a challenge to make you ask for help: error: argument -g/--give-the-flag: expected one argument
+hacker@man~helpful-programs:~$ /challenge/challenge -p
+The secret value is: 131
+hacker@man~helpful-programs:~$ /challenge/challenge -g 131
+Correct usage! Your flag: pwn.college{ILjPz_Z_1yiuC3AlGLc1MtN1vxb.ddjM4QDLxYjN0czW}
+.
+.
+.
+.
+## 7. HELP FOR BUILTINS 
+
+Some commands, rather than being programs with man pages and help options, are built into the shell itself. These are called builtins.
+
+Like last program we will this time 'help challenge' and look for built-in lines that will help us find the secret value which will help us obtain the flag
+
+FLAG --- pwn.college{M5c-00X9pxN8KMyVoRz5VX8mAex.dRTM5QDLxYjN0czW}
+
+CODE ---
+
+hacker@man~help-for-builtins:~$ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune         display a fortune
+      --version         display the version
+      --secret VALUE    prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "M5c-00X9".
+hacker@man~help-for-builtins:~$ challenge --secret M5c-00X9
+Correct! Here is your flag!
+pwn.college{M5c-00X9pxN8KMyVoRz5VX8mAex.dRTM5QDLxYjN0czW}
+
+In the above case the secret value was "M5c-00X9"
+........
 
 
 
