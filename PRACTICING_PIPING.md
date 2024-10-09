@@ -1,0 +1,2 @@
+## 1. REDIRECTING OUTPUT
+
