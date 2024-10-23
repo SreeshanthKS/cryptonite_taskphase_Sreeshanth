@@ -4,7 +4,7 @@ Run /challenge/pwn and then /challenge/college, chaining them with a semicolon.
 
 FLAG --- pwn.college{IQP42W94EtdQTcfFqM_-MBusx_N.dVTN4QDLxYjN0czW}
 
-CODE ---
+CODE :
 hacker@chaining~chaining-with-semicolons:~$ /challenge/pwn;/challenge/college
 Yes! You chained /challenge/pwn and /challenge/college! Here is your flag:
 pwn.college{IQP42W94EtdQTcfFqM_-MBusx_N.dVTN4QDLxYjN0czW}
@@ -14,7 +14,7 @@ Run /challenge/pwn and then /challenge/college, but this time in a shell script 
 
 FLAG --- pwn.college{0YNkZ14YOCLAMxU1B88JzhFnBWc.dFzN4QDLxYjN0czW}
 
-CODE ---
+CODE :
 hacker@chaining~your-first-shell-script:~$ echo "/challenge/pwn;/challenge/college" > x.sh
 hacker@chaining~your-first-shell-script:~$ ls
 COLLEGE  Desktop  PWN  college  error  instructions  my-flag  myflag  not-the-flag  pwn  pwn_output  random  the-flag  tmp  x  x.sh
@@ -27,7 +27,7 @@ pwn.college{0YNkZ14YOCLAMxU1B88JzhFnBWc.dFzN4QDLxYjN0czW}
 FLAG --- pwn.college{46Wo29flG9YR-WoWj57gaRLxhCc.dhTM5QDLxYjN0czW}
 
 
-CODE ---
+CODE :
 hacker@chaining~redirecting-script-output:~$ echo "/challenge/pwn;/challenge/college" > x.sh
 hacker@chaining~redirecting-script-output:~$ ls
 COLLEGE  Desktop  PWN  college  error  instructions  my-flag  myflag  not-the-flag  pwn  pwn_output  random  the-flag  tmp  x  x.sh
@@ -52,7 +52,7 @@ pwn.college{46Wo29flG9YR-WoWj57gaRLxhCc.dhTM5QDLxYjN0czW}
 
 FLAG ---pwn.college{4OyZwKzOT6LLteITNmh7N2zQ2-q.dRzNyUDLxYjN0czW}
 
-CODE ---
+CODE :
 hacker@chaining~executable-shell-scripts:~$ echo /challenge/solve > x.sh
 hacker@chaining~executable-shell-scripts:~$ ls
 COLLEGE  Desktop  PWN  college  error  instructions  my-flag  myflag  not-the-flag  pwn  pwn_output  random  the-flag  tmp  x  x.sh
