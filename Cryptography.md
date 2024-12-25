@@ -85,3 +85,35 @@ root@DESKTOP-DCDALLM:~# python custom_encryption.py.1
 a = 94
 b = 29
 plain is: picoCTF{custom_d2cr0pt6d_751a22dc}
+
+
+
+
+# EXTRA(0) - Rotation
+
+Thought Process - 
+I took the given file, did wget to it in the terminal, and cat-ed out the details of the encrypted.txt.
+Then on analyzing the given text, I saw that each letter was just 8 steps away from the actual one. So I went to an online ceaser cypher decoder and decoded the message for the flag.
+
+FLAG --- 	picoCTF{r0tat1on_d3crypt3d_25d7c61b}
+
+# EXTRA(1) - Substitution0
+
+Thought Process- 
+So here I again did wget to the given source and cat-ed out the details of message.txt and then I went online to look for a substitution cypher-decoder and decrypted the message to get the flag 
+
+![image](https://github.com/user-attachments/assets/1f116421-c59d-4207-94bd-9cf325cc5977)
+
+FLAG - PICOCTF{5UB5717U710N_3V0LU710N_03055505}
+
+# EXTRA(2) - SUBSTITUTION1
+
+Thought Process - 
+I thought it was same as the last one tbh, but no, once I decoded it I got everything in caps and then I reduced the word PICO to pico and then I was still not getting the flag. Then I saw that there was 
+a J instead of a Q in frequency, so I tried replacing that and I got the flag!!
+
+FLAG --- picoCTF{FR3QU3NCY_4774CK5_4R3_C001_7AA384BC}
+
+![image](https://github.com/user-attachments/assets/42a4b6d7-f698-4d80-af2b-5761f13b6d98)
+
+
