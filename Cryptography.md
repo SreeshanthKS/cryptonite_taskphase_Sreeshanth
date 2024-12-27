@@ -117,3 +117,27 @@ FLAG --- picoCTF{FR3QU3NCY_4774CK5_4R3_C001_7AA384BC}
 ![image](https://github.com/user-attachments/assets/42a4b6d7-f698-4d80-af2b-5761f13b6d98)
 
 
+# EXTRA(3) - SUBSTITUTION3 
+
+Thought Process - 
+It is the same as the last one, I just had to bring down PICO to pico
+
+FLAG --- picoCTF{N6R4M_4N41Y515_15_73D10U5_42EA1770}
+
+# EXTRA(4) - Morse-Code 
+
+Thought Process - 
+So, instead of using Audacity decoder, I went for another online decoder in Morsecode.world through which I got the message and converted everything to lowercase and put the underscore in the big gaps in between to get the flag part.
+
+FLAG --- picoCTF{wh47_h47h_90d_w20u9h7}
+
+# EXTRA(5) - Caesar
+
+Thought Process - 
+Basically, it's the same as doing a normal caesar cypher decoder using an online decoder called decoder.fr . I cat-ed out the txt document and I got the text to be deciphered.
+
+FLAG --- picoCTF{crossingtherubiconzaqjsscr}
+
+
+
+x![image](https://github.com/user-attachments/assets/7f75dafc-794a-4f44-bdd4-9e85b5c912cc)
