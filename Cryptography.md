@@ -86,6 +86,18 @@ a = 94
 b = 29
 plain is: picoCTF{custom_d2cr0pt6d_751a22dc}
 
+# miniRSA 
+
+"Thought Process- 
+I used an online RSA cipher decoder to find the flag by inputting the N,e,c values.
+"
+
+Flag---picoCTF{n33d_a_lArg3r_e_606ce004}
+
+![image](https://github.com/user-attachments/assets/6584a9a7-9efd-489f-b0de-5db4d8cc7357)
+
+
+
 
 
 
